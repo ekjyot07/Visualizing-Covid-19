@@ -1,0 +1,245 @@
+body {
+    margin: 5;
+    font-size: 20px;
+    font-weight: 1000;
+    font-family: Quicksand, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+#titleHead {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 0 1px 0 #fff;
+    top: 30px;
+    left: 25vw;
+    text-align: left;
+}
+
+#owner {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    font-weight: 300;
+    text-shadow: 0 1px 0 #fff;
+    top: 500px;
+    left: 30px;
+    text-align: left;
+    color: #474747;
+    padding-bottom: 20px;
+    font-size: 10px;
+}
+
+#SideText {
+    position: absolute;
+    display: block;
+    font-size: 15px;
+    color: #474747;
+    top: 70vh;
+    left: 25vw;
+    width: 800px;
+    font-weight: 400;
+    text-shadow: 0 1px 0 #fff;
+}
+
+
+
+#BelowLeftText {
+    position: absolute;
+    font-size: 16px;
+    color: #080808;
+    top: 47vh;
+    left: 22vw;
+    width: 110px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 1px 0 #fff;
+}
+
+
+#BelowRightText {
+    position: absolute;
+    font-size: 16px;
+    color: #080808;
+    top: 47vh;
+    left: 76vw;
+    width: 110px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 1px 0 #fff;
+}
+
+line {
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+.subtitle {
+    position: absolute;
+    width: 900px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+text {
+    font-size: 10px;
+}
+
+.titles {
+    font-size: 14px;
+}
+
+.annotate {
+    font-size: 11px;
+    fill: #474747;
+}
+
+path.chord {
+    fill-opacity: .80;
+}
+
+.pTitle {
+    font-size: 22px;
+    text-shadow: 0 1px 0 #fff;
+    fill: #474747;
+    font-weight: bold;
+}
+
+.survey {
+    font-size: 10px;
+}
+
+#buttons {
+    position: absolute;
+    top: 31vh;
+    left: 1vw;
+    display: inline-grid;
+    margin: 5px;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+
+#chart {
+    position: absolute;
+    top: 200px;
+    left: 25vw;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+#ptooltip {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 100, 100, 0.4);
+    pointer-events: none;
+}
+
+#ptooltip.hidden {
+    display: none;
+}
+
+#ptooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#sizeLegend {
+    position: absolute;
+    top: 20vh;
+    left: 70vw;
+    display: inline-block;
+    font-weight: 200;
+
+}
+
+#leftSizeLegend {
+    position: absolute;
+    top: 0px;
+    left: 118px;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 200;
+    font-size: small;
+}
+
+#rightSizeLegend {
+    position: absolute;
+    top: 0px;
+    left: 315px;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 200;
+    font-size: small;
+
+}
+
+#colorLegend {
+    position: absolute;
+    top: 10vh;
+    left: 70vw;
+    width: 380px;
+    display: inline-block;
+    font-weight: 200;
+
+}
+
+#leftColorLegend {
+    position: absolute;
+    top: 0px;
+    left: 118px;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 200;
+    font-size: small;
+
+}
+
+#rightColorLegend {
+    position: absolute;
+    top: 0px;
+    left: 285px;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 200;
+    font-size: small;
+}
+
+#LegendHeading {
+    position: absolute;
+    top: -115px;
+    left: 210px;
+    width: 80px;
+    display: grid;
+}
+
+#Legend {
+    position: absolute;
+    top: 10px;
+
+}

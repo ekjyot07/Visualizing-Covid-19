@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type='text/css'>
+	<meta charset="utf-8">
+	<title>Covid-19 Visualization</title>
+	<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+
+	<svg width="100" height="200"></svg>
+</head>
+
+<body>
+
+
+	<div id="body">
+		<div id="titleHead">
+			What affects coronavirus deaths?
+			<div class="subtitle">
+				<span>As the coronavirus pandemic unfolds, people are dying around the world. But the number of deaths
+					differs by country.<span /></br>
+					<span>Select different tabs to see how various factors affect Covid-19 fatality rates. <span /><br>
+						<span>Circles may
+							be clicked to highlight and track them through the animation.</span>
+			</div>
+		</div>
+		<div id="buttons"></div>
+		<div id="SideText">
+			<p id="p0" class="pTitle Side">Case Fatality Rate</p>
+			<p id="p1" class="Side">Case fatality rate is proportion of deaths compared to the total number of people
+				diagnosed.</p>
+			<p id="p2" class="Side">Countries which test more people are more likely to identify mild cases. And
+				mortality rates are generally higher in places with more older people.</p>
+		</div>
+
+		<div id="chart"></div>
+
+		<div id="BelowLeftText">
+			<p id="less">
+				Lower death rate
+			</p>
+		</div>
+
+		<div id="BelowRightText">
+			<p id="more">
+				Higher death rate
+			</p>
+		</div>
+	</div>
+	<div id="Legend">
+		<div id="sizeLegend">
+			<svg height="60" width="350">
+				<circle cx="295" cy="15" r="14" stroke="black" stroke-width="0.5" fill="black" />
+				<circle cx="247" cy="15" r="10" stroke="black" stroke-width="0.5" fill="black" />
+				<circle cx="210" cy="15" r="7" stroke="black" stroke-width="0.5" fill="black" />
+			</svg>
+			<span id="LegendHeading">Legend</span>
+			<span id="leftSizeLegend">Less population</span>
+			<span id="rightSizeLegend">More population</span>
+		</div>
+		<div id="colorLegend">
+			<svg height="30" width="280">
+				<circle cx="270" cy="15" r="8" stroke="black" stroke-width="0.5" fill="#960c0c" />
+				<circle cx="240" cy="15" r="8" stroke="black" stroke-width="0.5" fill="#fe8309" />
+				<circle cx="210" cy="15" r="8" stroke="black" stroke-width="0.5" fill="#fdffb2" />
+			</svg>
+			<span id="leftColorLegend">Lower death rates</span>
+			<span id="rightColorLegend">Higher death rates</span>
+		</div>
+	</div>
+
+	<div id="ptooltip" class="hidden">
+		<p><strong id="country">Country</strong></p>
+		<p><span id="pvariable">Deaths per cases: </span><span id="preThing"></span><span id="value">100</span><span
+				id="postThing">%</span></p>
+	</div>
+	</div>
+	<script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
